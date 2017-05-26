@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        
+        <link href="/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+
+
+table {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        caption {
+            border: 1px solid black;
+            color: rebeccapurple;
+            font-size: 3em;
+            border-top: none;
+            caption-side: bottom;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px 4px;
+        }
+
+        tbody th, tbody td, tfoot th, tfoot td {
+            text-align: right;
+        }
+
+        tfoot td {
+            color: red;
+            font-weight: bold;
+        }
+
+        /*.odd {
+            background-color: lightblue;
+        }*/
+
+        /*tbody tr:nth-child(2n + 1) {
+            background-color: lightblue;
+        }*/
+
+        tbody tr:nth-child(odd) {
+            background-color: cyan;
+        }
+        
+        
+        
+
+
+
+            
+            #myform {
+                padding: 20px;
+                margin: 16px;
+            background-color: black;
+            color: white;
+            }
+
+            #myfoods {
+            max-width: 350px;
+            padding: 10px;
+            border-bottom: 1px solid black;
+            border-top: 1px solid #3c3c3c;
+            background-color: firebrick;
+            color: white;
+            }
+            /* id selector */
+        #it {
+            color: red;
+        }
+
+        /* type selector */
+        div {
+            background-color: aqua;
+        }
+
+        /* class selector */
+        /* comma is either (either .foo or section)*/
+        .foo, section {
+            font-size: 35px;
+        }
+
+        /* space is right inside of left (section inside of .foo) */
+        .foo section {
+            font-family: cursive;
+        }
+
+        .foo p {
+            background-color: blue;
+        }
+
+        /* Only immediate children*/
+        .foo > p {
+            font-weight: bold;
+        }
+
+        /* p that immediately follows a section */
+        section + p {
+            font-style: italic;
+        }
+
+
+
+            .box {
+			border: 1px solid black;
+			background-color: yellow;
+			height: 100px;
+			width: 222px;
+			text-align: center;
+			line-height: 100px;
+			/*float: left;*/
+			display: inline-block;
+			margin: 16px;
+		}
+
+            .box2 {
+			border: 2px solid black;
+			background-color: aqua;
+			height: 100px;
+			width: 400px;
+			text-align: center;
+			line-height: 100px;
+			/*float: left;*/
+			display: inline-block;
+			margin: 16px;
+		}
+            .box4 {
+			border: 2px solid black;
+			background-color: white;
+			height: 100px;
+			width: 200px;
+			text-align: center;
+			line-height: 100px;
+			/*float: left;*/
+			display: inline-block;
+			margin: 16px;
+		}
+
+
+            body {
+			background: linear-gradient(orange, red, yellow, blue);
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+		.heb {
+			list-style-type: hebrew;
+		}
+		
+		.square {
+			list-style-type: square;
+		}
+		
+		.bullet {
+			list-style-image: url(bullet.png);
+		}
+		
+		li {
+			border: 1px solid white;
+			background-color: white;
+			line-height: 15px;
+			font-size: 35px;
+		}
+		
+		li {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		
+		li {
+			margin-top: 20px;
+			margin-bottom: 20px;
+
+		}
+            .video p {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        video {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 600px) {
+            .video {
+                width: 33.333%;
+                display: inline-block;
+                padding: 10px;
+            }
+        }
+		
+	</style>
+
+		<title>Restaurant</title>
+	</head>
+	<body>
+        
+  <div class="box4"><a href="header.html">Home</a></div>
+  <div class="box4"><a href="header.html">News</a></div>
+  <div class="box4"><a href="header.html">Contact</a></div>
+  <div class="box4"><a href="header.html">About</a></div>
+
+        <audio autoplay loop preload="auto">
+        <!--source src="Ovinu.mp3" /-->
+    </audio>
+	<h1>teddy's Restaurant</h1>
+	<hr>
+	<br><br><br><br><br>
+        <ul class="bullet">
+    <li id="myfoods">
+        
+	<h2>Hamburger</h2>
+	<a href="hamburger_details.html"><font color="FF00CC"><img src="images/burger.png" alt="hamburger" /></font></a>
+	</li>
+            <li id="myfoods">
+
+            <p><h2>Hot Dog</h2></p>
+	<img src="images/hotdog2.png" alt="hot dog"/>
+        </li>
+
+        </ul>
+        
+         
+        <div class="box2"><h2>Desserts</h2></div>
+        <div class="box2"><h2>Appetizers</h2></div>
+        <div class="box2">Beverages</div>
+        <div class="box2">Soups</div>
+        <div class="box2">Main Course</div>
+        <div class="box2">Entree`</div>
+        <div class="box2">Chinese</div>
+
+        <div class="video" title="A great video">
+        <video controls preload="none" poster="class1.png">
+            <source src="class1.mp4" />
+        </video>
+        <p>class1</p>
+    </div>
+
+        <p>
+        <div id="myform">
+            To Sign Up For Our Daily Lunch Specials, Please Fill Out Form:<form action="processOrder.php" method="post">
+ <br><label>First Name <input type="text" name="firstName" placeholder="John"/></label>
+   <br>     <label for="lastName">Last Name</label> <input type="text" id="lastName" name="lastName" placeholder="Doe"/>
+     <br>   <label>Password <input type="password" name="password" minlength="5" maxlength="15" placeholder="Enter Password"/></label>
+     <br>   <label>Email <input type="email" name="email"/></label>
+     <br>   <label>Rate Us! <input type="range" name="rating" min="0" max="5"/></label>
+      <br>  <label>
+                Do you think our restaurant should offer hard drinks? vote now!
+                <input type="radio" name="Liquor" value="yes" required checked/>Yes
+                <input type="radio" name="Liquor" value="no"/>No
+            </label>
+        <input type="submit"/>
+    </form>
+        </div>
+
+        </p>
+        <table>
+            <tr>
+                <th>menu item</th>
+                   <th>Calories</th>
+                       <th>fat</th>
+            </tr>
+            <tr>
+                <td>Hamburger</td>
+                    <td>250</td>
+                        <td>120</td>
+            </tr>
+            <tr>
+                <td>Hotdog</td>
+                    <td>300</td>
+                         <td>200</td>
+             </tr>
+        </table>
+	</body>
+</html>
